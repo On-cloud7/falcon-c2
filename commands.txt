@@ -1,0 +1,11 @@
+Attacker Side :- 
+python -m venv pyenv
+.\pyenv\Scripts\activate.bat 
+pip install -r .\requirements.txt
+python .\manage.py makemigrations
+python .\manage.py migrate
+python .\manage.py createsuperuser
+python .\manage.py runserver
+Navin Terminal Var - Victim Side La - Paylod Commands 
+1. cd .\payloads\
+2. python .\payload.py
