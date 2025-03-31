@@ -18,6 +18,7 @@ COPY . .
 # Run migrations
 RUN python manage.py makemigrations
 RUN python manage.py migrate
+
 #Create Superuser 
 RUN python manage.py createsuperuser
 
